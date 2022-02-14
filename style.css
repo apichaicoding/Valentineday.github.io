@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .heart {
+    width: 50px;
+    height: 50px;
+    background: red;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 200px;
+    top: 200px;
+  }
+  
+  .heart .left {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: -25px;
+    top: 0px;
+  }
+  
+  .heart .right {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: -25px;
+  }
+  
+  h1, h2 {
+    color: white;
+    position: relative;
+  }
+  
+  .panel {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url("P1.jpeg");
+    z-index: 1;
+    padding: 40px;
+    border-radius: 20px;
+  }
+
+  @keyframes slideBg {
+    0%{
+      background-image: url("P1.jpeg");
+    }
+    100%{
+      background-image: url("Card.jpeg");
+    }
+    
+  }
